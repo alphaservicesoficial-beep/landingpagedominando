@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+* {
+  cursor: none !important;
+}
+
+
+
+.test{
+  color:  #010102;
+  color: rgba(0,198,255,0.25)
+}
+
+
+/* Fundo do arco grande */
+/* === DESKTOP / 1920px (padrão) === */
+.hero-arc-big {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1190px;     /* CALIBRADO PARA 1920px */
+  width: 3500px;
+  height: 1800px;
+  opacity: 0.8;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 120%,
+    rgb(0, 0, 0) 65%,
+    rgb(0, 217, 255) 45%,
+    rgba(0, 50, 70, 0) 66%
+  );
+  filter: blur(3px);
+  z-index: 0;
+}
+
+
+
+/* === NOTEBOOK / 1366–1680px === */
+@media (max-width: 1680px) {
+  .hero-arc-big {
+    bottom: -970px;
+    width: 2900px;
+    height: 1300px;
+  }
+}
+
+
+
+/* === TABLET / 768–1023px === */
+@media (max-width: 1024px) {
+  .hero-arc-big {
+    bottom: -1450px;
+    width: 3500px;
+    height: 2300px;
+  }
+}
+
+
+
+/* === CELULAR / <768px === */
+@media (max-width: 767px) {
+  .hero-arc-big {
+    bottom: -390px;   /* 🔥 AGORA FICA NO LUGAR CERTO */
+    width: 1200px;    /* 🔥 menor para caber no iPhone */
+    height: 600px;    /* 🔥 proporcional */
+    filter: blur(4px);
+  }
+}
+
+
+/* ----- ESTILO BASE (DESKTOP GRANDE) ----- */
+/* ----- DESKTOP GRANDE (DEFAULT) ----- */
+.logos-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1680px;       
+  height: 300px;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+
+/* ----- DESKTOP 1680px ----- */
+@media (max-width: 1680px) {
+  .logos-wrapper {
+    bottom: -1780px;
+    height: 600px;
+  }
+}
+
+
+/* ----- NOTEBOOK 1024px–1679px ----- */
+@media (max-width: 1024px) {
+  .logos-wrapper {
+    bottom: -1780px;
+    height: 600px;
+  }
+}
+
+
+/* ----- TABLET 768px–1023px ----- */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .logos-wrapper {
+    bottom: -1720px;
+    height: 600px;
+  }
+}
+
+
+/* ----- MOBILE (<768px) ----- */
+@media (max-width: 767px) {
+  .logos-wrapper {
+    bottom: -680px;
+    height: 250px;
+  }
+}
+
+
+/* ----- DESKTOP GRANDE (DEFAULT) ----- */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 48rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: -120px; /* mobile */
+}
+
+/* DESKTOP 1920px */
+@media (min-width: 1920px) {
+  .hero-content {
+    margin-top: -270px;
+  }
+}
+
+/* NOTEBOOK 1536px */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .hero-content {
+    margin-top: -170px;
+  }
+}
+
+
+/* ----- DESKTOP COMUM (1366px / 1440px / 1600px) ----- */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .hero-content {
+    margin-top: -180px;
+  }
+}
+
+/* ----- NOTEBOOK (1024px–1279px) ----- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-content {
+    margin-top: -140px;   /* AQUI É O FIX DO SEU PROBLEMA */
+  }
+}
+
+/* ----- TABLET (768px–1023px) ----- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-content {
+    margin-top: -200px;
+  }
+}
+
+/* ----- MOBILE (<768px) ----- */
+@media (max-width: 767px) {
+  .hero-content {
+    margin-top: -120px;
+  }
+}
