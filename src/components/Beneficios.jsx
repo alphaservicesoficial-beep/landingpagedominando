@@ -52,7 +52,7 @@ export default function Beneficios() {
             <Target className="text-[#00C6FF] w-10 h-10 mb-4" />
             <h3 className="text-xl font-semibold mb-2">Acesso em todos os lugares</h3>
             <p className="text-gray-400 text-sm">
-              Você poderá acessar as nossasw ferramentas através do seu desktop ou notebook.
+              Você poderá acessar as nossas ferramentas através do seu desktop ou notebook.
             </p>
           </div>
 
