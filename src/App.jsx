@@ -4664,7 +4664,7 @@ max-w-[85vw] sm:max-w-[300px] md:max-w-[900px]
     </span>
 
     <span className="font-semibold bg-gradient-to-r from-violet-500 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
-  Kling A.i (ilimitado)
+  Kling 3.0 (ilimitado)
 </span>
 
 <span className="font-semibold bg-gradient-to-r from-emerald-400 via-teal-400 to-sky-500 bg-clip-text text-transparent">
